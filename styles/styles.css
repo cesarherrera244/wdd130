@@ -1,16 +1,33 @@
+:root {
+  --heading-background-color: #f06;
+  --heading-text-color: #333;
+  --heading-font: 'Montserrat', Helvetica, sans-serif;
+  --padding: 1rem;
+  --border: 1px solid rgb(0 0 0 / 0.1);
+  --nav-background-color: darkblue;
+  --nav-link-color: white;
+  --main-max-width: 840px;
+  --aside-background-color: #eee;
+  --aside-color: #333;
+  --box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--nav-background-color);
+    padding: var(--padding);
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
 }
 
 img {
@@ -25,26 +42,27 @@ p {
 }
 
 main {
-  max-width: 840px;
+    max-width: var(--main-max-width);
 }
 
 aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2); /* Subtle transparent border effect */
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center; /* Center the text inside the aside element */
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Subtle transparent border effect */
+    padding: var(--padding);
+    background-color: var(--aside-background-color);
+    color: var(--aside-color);
+    text-align: center; /* Center the text inside the aside element */
+    box-shadow: var(--box-shadow);
 }
 
 aside img {
-  width: 200px;
-  height: auto; /* Maintain aspect ratio to avoid distortion */
+    width: 200px;
+    height: auto; /* Maintain aspect ratio to avoid distortion */
 }
 
 footer {
-  margin-top: 15px; /* Add a top margin */
-  border-top: 1px solid #000; /* Add a top border */
-  text-align: center; /* Center-align the text */
+    margin-top: 15px; /* Add a top margin */
+    border-top: 1px solid #000; /* Add a top border */
+    text-align: center; /* Center-align the text */
 }
