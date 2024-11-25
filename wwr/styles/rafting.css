@@ -70,10 +70,14 @@ nav a {
 
 .hero article img {
   float: right; /* Float the image to the right */
+  margin-left: 1rem;
 }
 
 .hero article p {
   clear: both;
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity for readability */
+  padding: 1rem;
+  color: var(--white-color); /* Text color for readability */
 }
 
 footer {
@@ -90,4 +94,10 @@ footer .social-icons a img {
 
 footer .social-icons a {
   color: var(--white-color); /* Use white color for the links */
+}
+
+main {
+  max-width: 1200px; /* Limit the entire width of the page */
+  margin: 0 auto; /* Center the main content */
+  padding: 1rem;
 }
