@@ -1,0 +1,93 @@
+/* Adding labeled colors */
+:root {
+  --primary-color: #03045E; 
+  --secondary-color: #023E8A; 
+  --accent-color: #CAF0F8; 
+  --background-color: #48CAE4;
+  --header-background-color: #0077B6;
+  --white-color: #FFFFFF;
+}
+
+/* Adding labeled font names */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Applying colors */
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--header-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav {
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--accent-color);
+  margin-left: 1rem;
+  text-decoration: none; /* Ensure no text-decoration */
+}
+
+.Logo img {
+  width: 150px; 
+  height: auto;
+  object-fit: contain;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero h1, .hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Ensure text is visible over image */
+}
+
+.hero article img {
+  float: right; /* Float the image to the right */
+}
+
+.hero article p {
+  clear: both;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  text-align: center; /* Center the footer text */
+  padding: 1rem; /* Add some padding */
+}
+
+footer .social-icons a img {
+  text-decoration: none; /* No text-decoration for social icons */
+  margin: 0 10px;
+}
+
+footer .social-icons a {
+  color: var(--white-color); /* Use white color for the links */
+}
