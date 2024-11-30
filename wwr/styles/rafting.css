@@ -24,29 +24,27 @@ body {
 }
 
 header {
-  background-color: var(--header-background-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  background-color: var(--header-background-color);
   padding: 1rem;
 }
 
 nav {
-  color: var(--background-color);
   display: flex;
-  align-items: center;
+  gap: 1rem;
 }
 
 nav a {
   color: var(--accent-color);
-  margin-left: 1rem;
-  text-decoration: none; /* Ensure no text-decoration */
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .Logo img {
   width: 150px; 
   height: auto;
-  object-fit: contain;
 }
 
 .hero {
@@ -80,24 +78,51 @@ nav a {
   color: var(--white-color); /* Text color for readability */
 }
 
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+figcaption {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem;
+}
+
 footer {
   background-color: var(--secondary-color);
   color: var(--background-color);
-  text-align: center; /* Center the footer text */
-  padding: 1rem; /* Add some padding */
-}
-
-footer .social-icons a img {
-  text-decoration: none; /* No text-decoration for social icons */
-  margin: 0 10px;
-}
-
-footer .social-icons a {
-  color: var(--white-color); /* Use white color for the links */
-}
-
-main {
-  max-width: 1200px; /* Limit the entire width of the page */
-  margin: 0 auto; /* Center the main content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
+
+footer .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
