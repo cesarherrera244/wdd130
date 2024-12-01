@@ -95,6 +95,12 @@ nav a {
   gap: 1rem;
 }
 
+.adventure-gallery img {
+  width: 100%;
+  height: 250px; /* Ensure uniform height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -125,4 +131,3 @@ footer .social-icons img {
   width: 20px;
   height: 20px;
 }
-
