@@ -1,0 +1,127 @@
+/* Adding labeled colors */
+:root {
+    --primary-color: #03045E; 
+    --secondary-color: #023E8A; 
+    --accent-color: #CAF0F8; 
+    --background-color: #48CAE4;
+    --header-background-color: #0077B6;
+    --white-color: #FFFFFF;
+  }
+  
+  /* Universal Selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 1.2em;
+    color: #333;
+    background: #fff;
+  }
+  
+  /* Header and h1 */
+  header {
+    margin: 0 auto;
+    width: 650px;
+  }
+  
+  h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+  }
+  
+  /* Fieldset and Legend */
+  fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+  }
+  
+  legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+  }
+  
+  /* Form Elements */
+  label, input, button, select, textarea {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  label {
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+  
+  button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Form Items */
+  .form-item {
+    display: grid;
+    align-items: center;
+  }
+  
+  /* Column1 Layout */
+  .column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+  }
+  
+  /* Column2 Layout */
+  .column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+  }
+  
