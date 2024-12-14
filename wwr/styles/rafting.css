@@ -58,24 +58,15 @@ nav a {
   object-fit: cover;
 }
 
-.hero h1, .hero article {
+.hero h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* Ensure text is visible over image */
-}
-
-.hero article img {
-  float: right; /* Float the image to the right */
-  margin-left: 1rem;
-}
-
-.hero article p {
-  clear: both;
+  color: var(--white-color); /* Ensure text is visible over image */
   background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity for readability */
   padding: 1rem;
-  color: var(--white-color); /* Text color for readability */
+  text-align: center;
 }
 
 .history-container {
@@ -132,3 +123,59 @@ footer .social-icons img {
   height: 20px;
 }
 
+/* Employee Profiles Section */
+.employee-profiles {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.employee-profiles figure {
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 150px; /* Fixed width for uniform size */
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Form Styling */
+.form-item {
+  display: grid;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+fieldset {
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+legend {
+  font-size: 1.3em;
+  color: navy;
+}
+
+label {
+  padding-right: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+button {
+  margin: 1rem 0;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+}
